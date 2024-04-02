@@ -1,9 +1,13 @@
 import express from 'express';
 import chalk from 'chalk';
-
+import cors from 'cors';
 import {router} from './routes/route.js';
 
-const app = express(); 
+
+
+const app = express();
+
+app.use(cors());
 
 const PORT = 8000;
 
